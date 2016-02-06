@@ -1,0 +1,24 @@
+crud_index:
+    path:     /
+    defaults: { _controller: "AlbusBundle:Book:index" }
+    methods:  GET
+
+crud_show:
+    path:     /{id}/show
+    defaults: { _controller: "AlbusBundle:Book:show" }
+    methods:  GET
+
+crud_new:
+    path:     /new
+    defaults: { _controller: "AlbusBundle:Book:new" }
+    methods:  [GET, POST]
+
+crud_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AlbusBundle:Book:edit" }
+    methods:  [GET, POST]
+
+crud_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AlbusBundle:Book:delete" }
+    methods:  DELETE

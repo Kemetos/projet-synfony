@@ -1,0 +1,4 @@
+albus_crud:
+    resource: "@AlbusBundle/Resources/config/routing/book.yml"
+    prefix:   /crud
+
